@@ -1,4 +1,4 @@
-var tutorialpopups = ["tutorialIntroSlide", "tutorialAddRemoveSlide", "tutorialStorageSlide"];
+var tutorialpopups = ["tutorialExplanationSlide", "tutorialBeginSlide", "tutorialEditSlide", "tutorialFinishSlide"];
 var currentPopUp = "";
 
 function toggle(div_id) {

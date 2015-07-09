@@ -22,20 +22,27 @@
 
 <body>
     <div class="blanket" id="blanket" style="display:none"></div>
-    <div class="popup" id="tutorialIntroSlide" style="display:none">
-        <h1>What is our app?</h1>
-        <p>This app is a virtual todo list.</p>
-        <a href="#" onclick="next_popup(tutorialpopups)">Next</a>
+    <div class="popup" id="tutorialExplanationSlide" style="display:none">
+        <h1>Welcome to iLanguageCloud!</h1>
+        <p>Create and edit, articles and masses of words, simply.</p>
+        <a href="#" onclick="next_popup(tutorialpopups)"><span> Next</span></a>
     </div>
-    <div class="popup" id="tutorialAddRemoveSlide" style="display:none">
-        <h2>Add/Remove Todos</h2>
-        <p>Type todos into prompted box "What needs to be done?" Once done with your task remove it using the red x.</p>
-        <a href="#" onclick="next_popup(tutorialpopups)">Next</a>
+    <div class="popup" id="tutorialBeginSlide" style="display:none">
+        <h2>Begin</h2>
+        <p>To begin, simply place your words or article into the text bar and click enter.</p>
+        <img src="PasteBarWordCloud.png" style="width:50px; height: 50px">
+        <a href="#" onclick="next_popup(tutorialpopups)"><span> Next</span></a>
     </div>
-    <div class="popup" id="tutorialStorageSlide" style="display:none">
-        <h3>Storage</h3>
-        <p>Local storage allows you to keep your list even if you close the tab or refresh the page.</p>
-        <a href="#" onclick="next_popup(tutorialpopups)">Got it!</a>
+    <div class="popup" id="tutorialEditSlide" style="display:none">
+        <h3>Edit</h3>
+        <p>Once your project is generated, simply double click the title to reveal the edit box. Hovering over the categories can reveal what is to be put where if they are full of words.</p>
+        <img src="EditBoxWordCloud.png" style="width:50px; height: 50px">
+        <a href="#" onclick="next_popup(tutorialpopups)"><span> Next</span></a>
+    </div>
+    <div class="popup" id="tutorialFinishSlide" style="display:none">
+        <h3>Finished?</h3>
+        <p>When finished, click the check mark or discard with the 'x'. </p>
+        <a href="#" onclick="next_popup(tutorialpopups)"><span>Let's Begin!</span></a>
     </div>
     <a href="#" onclick="next_popup(tutorialpopups)"></a>
 
