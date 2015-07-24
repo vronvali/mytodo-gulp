@@ -21,36 +21,11 @@
 </head>
 
 <body>
-    <div class="blanket" id="blanket" style="display:none"></div>
-    <div class="popup" id="tutorialExplanationSlide" style="display:none">
-        <h1>Welcome to iLanguageCloud!</h1>
-        <p>Create and edit, articles and masses of words, simply.</p>
-        <a href="#" onclick="next_popup(tutorialpopups)"><span> Next</span></a>
-    </div>
-    <div class="popup" id="tutorialBeginSlide" style="display:none">
-        <h2>Begin</h2>
-        <p>To begin, simply place your words or article into the text bar and click enter.</p>
-        <img src="PasteBarWordCloud.png" style="width:50px; height: 50px">
-        <a href="#" onclick="next_popup(tutorialpopups)"><span> Next</span></a>
-    </div>
-    <div class="popup" id="tutorialEditSlide" style="display:none">
-        <h3>Edit</h3>
-        <p>Once your project is generated, simply double click the title to reveal the edit box. Hovering over the categories can reveal what is to be put where if they are full of words.</p>
-        <img src="EditBoxWordCloud.png" style="width:50px; height: 50px">
-        <a href="#" onclick="next_popup(tutorialpopups)"><span> Next</span></a>
-    </div>
-    <div class="popup" id="tutorialFinishSlide" style="display:none">
-        <h3>Finished?</h3>
-        <p>When finished, click the check mark or discard with the 'x'. </p>
-        <a href="#" onclick="next_popup(tutorialpopups)"><span>Let's Begin!</span></a>
-    </div>
-    <a href="#" onclick="next_popup(tutorialpopups)"></a>
-
-    <body onload="next_popup(tutorialpopups)">
+    
         <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-        <div ui-view></div>
+        <div tutorial-slider></div>
         <!-- build:js(src) scripts/vendor.js -->
         <!-- bower:js -->
         <!-- run `gulp inject` to automatically populate bower script dependencies -->
