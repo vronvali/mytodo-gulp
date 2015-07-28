@@ -10,11 +10,11 @@ set -o errexit -o nounset
 rev=$(git rev-parse --short HEAD)
 
 echo "Ensuring Travis' commits are associated to him"
-git config user.name "Travis"
-git config user.email "vronvali@cesine.ca"
+# git config user.name "Travis"
+# git config user.email "vronvali@cesine.ca"
 
 echo "Ensuring Travis' has my website as a remote"
-git remote add mywebsite "https://$GH_TOKEN@github.com/vronvali/vronvali.github.io.git"
+# git remote add mywebsite "https://$GH_TOKEN@github.com/vronvali/vronvali.github.io.git"
 git fetch mywebsite
 git checkout -b gh-pages mywebsite/master
 git checkout gh-pages
@@ -29,3 +29,4 @@ git commit -m "rebuild todo App vronvali/mytodo-gulp at ${rev}"
 
 echo "Pushing the changes to my website on github (-q so that nothing gets printed in the travis logs which is sensitive)"
 git push -q mywebsite HEAD:master
+git checkout master
